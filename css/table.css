@@ -1,0 +1,18 @@
+table {
+    background-color: rgb(60, 150, 255);
+}
+
+thead {
+    background-color: rgb(110, 200, 255);
+}
+
+tr:nth-child(even) td {
+    /* 偶數行的顏色 */
+    color: black;
+    background-color: rgb(110, 200, 255);
+}
+
+td {
+    color: #fff;
+    vertical-align: middle;
+}

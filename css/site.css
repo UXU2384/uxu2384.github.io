@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, main {
+  height: 100%;
+  margin: 0%;
+  overflow: hidden;
+}
+
+a:hover {
+  /* 滑鼠懸停時增加邊框 */
+  border: solid rgb(0, 140, 255);
+}
+
+#snap-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: 0 10% 0 10%;
+}
+
+.animate-text {
+  transform: translateY(-50px); /* 初始位置，稍微向上偏移 */
+  opacity: 0;                   /* 初始為不可見 */
+  transition: transform 1s ease, opacity 1s ease; /* 平滑過渡 */
+}
+
+.title-page {
+  background-image: url(/images/title_page.png);
+  min-width: 100vh;
+
+  /* background-color: rgba(0, 0, 0, .6);
+  background-blend-mode: multiply; */
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 4% 10% 4% 10%;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.title-page h1 {
+  color: white;
+}
+
+.date-line {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  border-bottom: 1px solid white;
+  margin: 0 5%;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  padding: 0 0 0 10%;
+}
+
+.text-container {
+  display: grid;
+  grid-template-rows: auto min-content auto;
+  padding: 0 4%;
+}
+
+.text-section {
+  margin: 10% 0 0 10%;
+  margin-bottom: 0;
+  row-gap: 5%;
+}
+
+.text-title {
+  margin-bottom: 6%;
+  font-size: 2rem;
+}
+
+.brown-red{
+  color: rgb(175, 73, 2);
+}
+
+.text-end{
+  font-size: 1rem;
+  line-height: 2em;
+  margin-bottom: 6%;
+}
+
+.color-blocks {
+  display: flex;
+  margin: 0;
+  gap: 5%;
+}
+
+.color-blocks div {
+  height: 20px;
+  width: 20px;
+  margin-top: auto;
+  margin-bottom: 1%;
+}
+
+.story .about {
+  background-image: url(/images/story_about.png);
+  max-height: 100%;
+  grid-column: 2;
+
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.reels {
+  background-image: url(/images/reels_background.png);
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+
+  align-items: center;
+}
+
+.reel-video p {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.detail {
+  display: block;
+  background-image: url(/images/cat_detail.png);
+  
+  background-position: center 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-top: 20vh;
+  text-align: right;
+  
+  font-size: 0.7rem;
+  line-height: 3.2rem;
+  text-decoration: none; /* 移除底線 */
+}
+
+.form {
+  display: block;
+  background-image: url(/images/form.png);
+
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
