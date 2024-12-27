@@ -35,7 +35,7 @@ a:hover {
 }
 
 .title-page {
-  background-image: url(/images/title_page.png);
+  background-image: url(../images/title_page.png);
   min-width: 100vh;
 
   /* background-color: rgba(0, 0, 0, .6);
@@ -112,7 +112,7 @@ a:hover {
 }
 
 .story .about {
-  background-image: url(/images/story_about.png);
+  background-image: url(../images/story_about.png);
   max-height: 100%;
   grid-column: 2;
 
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .reels {
-  background-image: url(/images/reels_background.png);
+  background-image: url(../images/reels_background.png);
 
   background-position: center center;
   background-size: cover;
@@ -146,7 +146,7 @@ a:hover {
 
 .detail {
   display: block;
-  background-image: url(/images/cat_detail.png);
+  background-image: url(../images/cat_detail.png);
   
   background-position: center 50%;
   background-size: cover;
@@ -162,7 +162,7 @@ a:hover {
 
 .form {
   display: block;
-  background-image: url(/images/form.png);
+  background-image: url(../images/form.png);
 
   background-position: center bottom;
   background-size: cover;
